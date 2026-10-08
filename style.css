@@ -17,3 +17,16 @@ button{border:0;border-radius:12px;font-weight:750;cursor:pointer}.send{width:10
 #toast{position:fixed;bottom:18px;left:50%;transform:translate(-50%,100px);background:#1e1b4b;color:white;padding:13px 18px;border-radius:12px;font-size:13px;transition:.25s;max-width:90%;z-index:5}#toast.show{transform:translate(-50%,0)}
 .auto-hint{font-size:11px;color:#7c3aed;background:#f3e8ff;padding:6px 10px;border-radius:20px;display:none;margin-top:6px}
 .jadwalBox{font-size:11px;background:#fff7d6;border:2px dashed #2d1b4e;padding:10px 12px;border-radius:12px;margin-bottom:14px;font-weight:700;line-height:1.6}
+
+.jadwalBox s{
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  opacity: 0.6;
+  background: #fee2e2;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+select option:disabled{background:#f3f4f6;color:#9ca3af;font-style:italic}
+.prosesBox{background:#fef3c7!important;border-color:#f59e0b!important;color:#92400e}
+.mipaBox{background:#e0e7ff!important;border-color:#6366f1!important;color:#3730a3}

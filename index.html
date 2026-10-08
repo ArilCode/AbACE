@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
+<head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-
-<meta name="description" content="ACE • STUDENT SYSTEM - Absensi Digital Kelas Random" />
-
-<!-- Primary Meta Tags -->
-<meta name="title" content="Absensi Siswa 📚 - XI F Kelas Random">
-<meta name="description" content="ACE • STUDENT SYSTEM - Absensi Digital Kelas Random">
-
-<!-- Open Graph / Facebook / LinkedIn -->
-<!-- Open Graph / Facebook / LinkedIn -->
+<meta name="description" content="ACE • STUDENT SYSTEM - Absensi Digital" />
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ab-ace.vercel.app/">
-<meta property="og:title" content="Absensi Siswa 📚 - XI F Kelas Random">
-<meta property="og:description" content="ACE • STUDENT SYSTEM - Absensi Digital Kelas Random">
-<meta property="og:image" content="https://ab-ace.vercel.app/og-image.png?v=3">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://ab-ace.vercel.app/">
-<meta property="twitter:title" content="Absensi Siswa 📚 - XI F Kelas Random">
-<meta property="twitter:description" content="ACE • STUDENT SYSTEM - Absensi Digital Kelas Random">
-<meta property="twitter:image" content="https://ab-ace.vercel.app/og-image.png?v=3">
-
-<link rel="stylesheet" href="./style.css" type="text/css" media="all" />
-
+<meta property="og:title" content="Absensi Siswa 📚 - Kelas Random">
+<meta property="og:description" content="ACE • STUDENT SYSTEM - Absensi Digital">
+<meta property="og:image" content="https://ab-ace.vercel.app/og-image.png?v=4">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Absensi Siswa 📚 - Kelas Random">
+<meta name="twitter:description" content="ACE • STUDENT SYSTEM - Absensi Digital">
+<meta property="twitter:image" content="https://ab-ace.vercel.app/og-image.png?v=4">
+<link rel="stylesheet" href="./style.css" />
 <title>Absensi Siswa/i</title>
 </head>
 <body>
 <div class="wrap">
 <header class="hero">
 <div class="brand">ACE • STUDENT SYSTEM</div>
-<h1>Absensi Siswa 📚</h1><p>1 Siswa bisa absen per Mapel / Hari</p>
+<h1>Absensi Siswa 📚</h1><p>Pilih kelas dulu, 1 siswa / mapel / hari</p>
 <div class="clock"><div id="time">--:--:--</div><div id="date">Memuat tanggal...</div><span class="wib">🌏 Waktu Indonesia Barat (WIB)</span></div>
 </header>
 <section class="card">
 <h2>📝 Form Absensi</h2>
-<div id="jadwalInfo" class="jadwalBox"></div>
+<div id="jadwalInfo" class="jadwalBox">Pilih kelas untuk lihat jadwal hari ini</div>
 <form id="form">
+<label class="title">Pilih Kelas</label>
+<select id="kelas" required>
+  <option value="">-- Pilih Kelas --</option>
+  <option value="X E">X E</option>
+  <option value="XI F">XI F</option>
+  <option value="XII MIPA">XII MIPA</option>
+</select>
+
 <label class="title">Nama Siswa</label>
-<select id="nama" required><option value="">-- Pilih Nama Siswa --</option></select>
+<select id="nama" required><option value="">-- Pilih Kelas Dulu --</option></select>
 <div id="hintNama" class="auto-hint"></div>
 
 <label class="title">Mata Pelajaran</label>
-<select id="mapel" required><option value="">-- Pilih Mapel --</option></select>
+<select id="mapel" required><option value="">-- Pilih Kelas Dulu --</option></select>
 <div id="hintMapel" class="auto-hint"></div>
 
 <label class="title">Guru Mapel</label>
-<select id="guru" required><option value="">-- Pilih Guru --</option></select>
+<select id="guru" required><option value="">-- Pilih Mapel Dulu --</option></select>
 <div id="hintGuru" class="auto-hint"></div>
 
 <label class="title">Status Kehadiran</label>
@@ -63,10 +58,9 @@
 </form>
 <p class="note">data tersimpan di DataBase</p>
 </section>
-<div class="footer">XI F Kelas Random ✨ • © <script>document.write(new Date().getFullYear())</script> <br>Made with 🖤 by ArilCode</div>
+<div class="footer">© <script>document.write(new Date().getFullYear())</script> • Made with 🖤 by ACE (ArilCode Engineer)</div>
 </div>
 <div id="toast"></div>
-
-<script src="./main.js" type="text/javascript" charset="utf-8"></script>
+<script src="./main.js"></script>
 </body>
 </html>
