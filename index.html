@@ -1,83 +1,65 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="ACE • STUDENT SYSTEM - Absensi Digital" />
-
-<!-- Primary Meta Tags -->
-<meta name="title" content="Absensi Siswa 📚">
-<meta name="description" content="ACE • STUDENT SYSTEM - Absensi Digital">
-
-<!-- Open Graph / Facebook / LinkedIn -->
-<!-- Open Graph / Facebook / LinkedIn -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ab-ace.vercel.app/">
-<meta property="og:title" content="Absensi Siswa 📚">
-<meta property="og:description" content="ACE • STUDENT SYSTEM - Absensi Digital">
-<meta property="og:image" content="https://ab-ace.vercel.app/og-image.png?v=4">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://ab-ace.vercel.app/">
-<meta property="twitter:title" content="Absensi Siswa 📚">
-<meta property="twitter:description" content="ACE • STUDENT SYSTEM - Absensi Digital">
-<meta property="twitter:image" content="https://ab-ace.vercel.app/og-image.png?v=4">
-
-<link rel="icon" type="image/png" href="./images/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
-<link rel="shortcut icon" href="./images/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Absensi SMANDA" />
-<link rel="manifest" href="./site.webmanifest" />
-<link rel="stylesheet" href="./style.css" />
-<title>Absensi Siswa/i</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedang Maintenance</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="wrap">
-<header class="hero">
-<div class="brand">ACE • STUDENT SYSTEM</div>
-<h1>Absensi Siswa 📚</h1><p>Pilih kelas dulu, 1 siswa / mapel / hari</p>
-<div class="clock"><div id="time">--:--:--</div><div id="date">Memuat tanggal...</div><span class="wib">🌏 Waktu Indonesia Barat (WIB)</span></div>
-</header>
-<section class="card">
-<h2>📝 Form Absensi</h2>
-<div id="jadwalInfo" class="jadwalBox">Pilih kelas untuk lihat jadwal hari ini</div>
-<form id="form">
-<label class="title">Pilih Kelas</label>
-<select id="kelas" required>
-  <option value="">-- Pilih Kelas --</option>
-  <option value="X E">X E</option>
-  <option value="XI F">XI F</option>
-  <option value="XII MIPA">XII MIPA</option>
-</select>
+  <main class="container">
+    <div class="gears" aria-hidden="true">
+      <svg class="gear gear-big" viewBox="0 0 100 100">
+        <g fill="currentColor">
+          <circle cx="50" cy="50" r="32"/>
+          <rect x="43" y="6" width="14" height="20" rx="3"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(45 50 50)"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(90 50 50)"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(135 50 50)"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(180 50 50)"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(225 50 50)"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(270 50 50)"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(315 50 50)"/>
+        </g>
+        <circle cx="50" cy="50" r="13" fill="var(--bg)"/>
+      </svg>
+      <svg class="gear gear-small" viewBox="0 0 100 100">
+        <g fill="currentColor">
+          <circle cx="50" cy="50" r="32"/>
+          <rect x="43" y="6" width="14" height="20" rx="3"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(60 50 50)"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(120 50 50)"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(180 50 50)"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(240 50 50)"/>
+          <rect x="43" y="6" width="14" height="20" rx="3" transform="rotate(300 50 50)"/>
+        </g>
+        <circle cx="50" cy="50" r="13" fill="var(--bg)"/>
+      </svg>
+    </div>
 
-<label class="title">Nama Siswa</label>
-<select id="nama" required><option value="">-- Pilih Kelas Dulu --</option></select>
-<div id="hintNama" class="auto-hint"></div>
+    <h1>Sedang <span class="accent">Maintenance</span></h1>
+    <p class="subtitle">
+      Kami sedang melakukan pemeliharaan sistem untuk meningkatkan layanan.
+      Mohon maaf atas ketidaknyamanannya, kami akan segera kembali.
+    </p>
 
-<label class="title">Mata Pelajaran</label>
-<select id="mapel" required><option value="">-- Pilih Kelas Dulu --</option></select>
-<div id="hintMapel" class="auto-hint"></div>
+    <div class="countdown" aria-live="polite">
+      <div class="box"><span id="hours">00</span><small>Jam</small></div>
+      <div class="box"><span id="minutes">00</span><small>Menit</small></div>
+      <div class="box"><span id="seconds">00</span><small>Detik</small></div>
+    </div>
 
-<label class="title">Guru Mapel</label>
-<select id="guru" required><option value="">-- Pilih Mapel Dulu --</option></select>
-<div id="hintGuru" class="auto-hint"></div>
+    <div class="progress" role="progressbar" aria-label="Progres maintenance">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <p class="status" id="status">Memperbarui sistem...</p>
 
-<label class="title">Status Kehadiran</label>
-<div class="status">
-<label class="opt"><input type="radio" name="status" value="Hadir" required><span>✅ Hadir</span></label>
-<label class="opt"><input type="radio" name="status" value="Izin"><span>📩 Izin</span></label>
-<label class="opt"><input type="radio" name="status" value="Sakit"><span>🤒 Sakit</span></label>
-<label class="opt"><input type="radio" name="status" value="Alfa"><span>❌ Alfa</span></label>
-</div>
-<button class="send" id="send" type="submit">Kirim Absensi</button>
-<div class="success" id="success"></div>
-</form>
-<p class="note">data tersimpan di DataBase</p>
-</section>
-<div class="footer">© <script>document.write(new Date().getFullYear())</script> • Made with 🖤 by ACE (ArilCode Engineer)</div>
-</div>
-<div id="toast"></div>
-<script src="./main.js"></script>
+    <p class="contact">
+      Butuh bantuan? Hubungi
+      <a href="mailto:support@example.com">arilhidayat202@gmail.com</a>
+    </p>
+  </main>
+
+  <script src="./script.js"></script>
 </body>
 </html>
